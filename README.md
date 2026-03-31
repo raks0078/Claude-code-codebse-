@@ -188,6 +188,42 @@ claude mcp remove claude-code-explorer
 
 ---
 
+## 🌐 Web UI
+
+A web-based interface for exploring and interacting with the Claude Code source code, providing a browser-accessible UI for the MCP server and PTY terminal.
+
+### Running the Web UI
+
+1. **Install dependencies** (requires Bun):
+   ```bash
+   bun install
+   ```
+
+2. **Start the MCP server backend** (port 3001):
+   ```bash
+   cd mcp-server
+   npm install && npm run build
+   PORT=3001 node dist/src/http.js &
+   ```
+
+3. **Start the PTY server** (for terminal functionality):
+   ```bash
+   bun run src/server/web/pty-server.ts &
+   ```
+
+4. **Start the web development server** (port 4000):
+   ```bash
+   cd web
+   npm install
+   npm run dev:web
+   ```
+
+5. **Open your browser** to [http://localhost:4000](http://localhost:4000)
+
+The web UI provides an interactive way to browse tools, commands, search the codebase, and explore the source code through a modern web interface.
+
+---
+
 ## Directory Structure
 
 ```
