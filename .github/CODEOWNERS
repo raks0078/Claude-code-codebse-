@@ -1,0 +1,16 @@
+# Global fallback — any unmatched file requires review from a core maintainer
+* @raksoo78
+
+# Web frontend
+/web/ @raksoo78
+
+# MCP server
+/mcp-server/ @raksoo78
+
+# CI/CD infrastructure — changes need extra scrutiny
+/.github/ @raksoo78
+/docker/ @raksoo78
+/scripts/ @raksoo78
+
+# Core CLI source
+/src/ @raksoo78
